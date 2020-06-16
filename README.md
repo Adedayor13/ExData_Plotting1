@@ -35,13 +35,13 @@ hist(eda1$Global_active_power, main = "GLobal Active Power", xlab = "GLobal Acti
      ylab = "Frequency", col = "red")
 dev.copy(png, "plot1.png", width = 480, height = 480) #copying the output
 dev.off()
-
+![plot1.png](Images/plot1.png)
 ### Plot 2
 plot(eda1$Global_active_power ~ eda1$datetime, type = "l", xlab = "", 
      ylab = "Global Active Power (Kilowatts)")
 dev.copy(png, "Plot2.png", width = 480, height = 480) #copying the output
 dev.off()
-
+![Plot2.png](Images/Plot2.png)
 ### Plot 3
 with(eda1, {
   plot(Sub_metering_1~datetime, type="l",
@@ -54,7 +54,7 @@ legend("topright", col=c("black", "red", "blue"),
 
 dev.copy(png, file="Plot3.png", width = 480, height = 480) #copying the output
 dev.off()
-
+![Plot3.png](Images/Plot3.png)
 ### Plot 4
 par(mfrow=c(2,2), mar=c(4,4,2,2), oma=c(0,0,2,2))
 with(eda1, {
@@ -73,4 +73,4 @@ with(eda1, {
 })
 dev.copy(png, file="plot4.png", height=480, width=480) #copying the output
 dev.off()
-
+![Plot4.png](Images/Plot4.png)
